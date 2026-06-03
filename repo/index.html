@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>日語試算表</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" id="appShell">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar__head">
+          <div>
+            <p class="eyebrow">Google Sheets</p>
+            <h1>日語資料</h1>
+          </div>
+          <button class="icon-button" id="toggleSidebar" type="button" aria-label="收合側欄" title="收合側欄">
+            <span aria-hidden="true">‹</span>
+          </button>
+        </div>
+
+        <nav class="sheet-tabs" id="sheetTabs" aria-label="工作表頁籤"></nav>
+      </aside>
+
+      <section class="content">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow">目前頁籤</p>
+            <h2 id="activeSheetTitle">載入中</h2>
+          </div>
+          <div class="toolbar__actions">
+            <button class="text-button" id="toggleRuby" type="button">隱藏讀音</button>
+            <label class="search">
+              <span aria-hidden="true">⌕</span>
+              <input id="searchInput" type="search" placeholder="搜尋表格內容" autocomplete="off" />
+            </label>
+          </div>
+        </header>
+
+        <section class="status" id="status" role="status">正在讀取資料...</section>
+
+        <section class="table-wrap" id="tableWrap" hidden>
+          <table id="dataTable">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
