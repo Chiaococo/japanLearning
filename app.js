@@ -1,5 +1,5 @@
 const SPREADSHEET_ID = "1q1s3uBEqOhu3hXbQiY9NZWshFjDv_cTIH6qkQp_zxac";
-const SHEETS_API_URL = "";
+const SHEETS_API_URL = "https://script.google.com/macros/s/AKfycbyYMrS-PGXSjrLmeUuCkHDO5_sKafLOqxhMrS9Np2q2oUCXxaia1BC6-PKgDri7J5b-rg/exec";
 const DAY_COUNT = 100;
 const DAY_SHEETS = Array.from({ length: DAY_COUNT }, (_, index) => {
   const label = `Day${index + 1}`;
